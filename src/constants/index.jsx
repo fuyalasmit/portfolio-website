@@ -109,23 +109,3 @@ export const words = [
   "GitHub",
   "VS Code",
 ];
-
-// ::-webkit-scrollbar {
-//     width: 12px;
-//     height: 12px;
-//   }
-
-//   ::-webkit-scrollbar-track {
-//     background: #20242d;
-//   }
-
-//   ::-webkit-scrollbar-thumb {
-//     background: #3b82f6;
-//     border-radius: 6px;
-//     border: 1px solid #eee;
-//     transition: background 0.3s ease;
-//   }
-
-//   ::-webkit-scrollbar-thumb:hover {
-//     background: #555555;
-//   }
