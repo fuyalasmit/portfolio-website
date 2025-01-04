@@ -41,7 +41,7 @@ const Header = ({ menuOpen, setMenuOpen }) => {
       {/* overlay for mobile menu */}
       {menuOpen && (
         <div
-          className="fixed inset-0 z-20 bg-black opacity-50 "
+          className="fixed inset-0 z-20 bg-black opacity-50 md:hidden"
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Close Menu"
         />
