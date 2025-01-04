@@ -6,7 +6,7 @@ import ContactDetailsCard from '../components/ContactDetailsCard';
 
 const Contact = () => {
   return (
-    <section className="px-4 py-16 lg:py-20">
+    <section className="px-4 py-16 lg:py-20" id="contact">
       <SectionTitle title="Contact Me" />
       <div className="container mt-10 flex flex-col gap-10 rounded-2xl border-2 border-white/10 bg-white/5 p-10 md:flex-row">
         <div className=" flex flex-1 items-center justify-center">

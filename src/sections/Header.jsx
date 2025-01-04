@@ -6,37 +6,105 @@ import Button from '../components/Button.jsx';
 import { BiMenuAltRight, BiX } from 'react-icons/bi';
 import MobileMenu from '../components/MobileMenu.jsx';
 import Logo from '../components/Logo.jsx';
+import { motion } from 'framer-motion';
 
 const Header = ({ menuOpen, setMenuOpen }) => {
+  const logoVariants = {
+    hidden: {
+      scale: 0,
+      opacity: 0,
+    },
+    visible: {
+      scale: 1,
+      opacity: 1,
+      transition: {
+        duration: 1,
+        ease: 'easeOut',
+      },
+    },
+  };
+  const menuVariants = {
+    hidden: {
+      opacity: 1,
+    },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.2,
+        // each child element's animation will start with a delay relative to the previous one, creating a cascading or sequential animation effect.
+        ease: 'easeOut',
+      },
+    },
+  };
+  const menuItemVariants = {
+    hidden: {
+      y: -20,
+      opacity: 0,
+    },
+    visible: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        duration: 0.5,
+      },
+    },
+  };
   return (
     <>
-      <header className="fixed top-0 z-10 w-full px-4 py-4 ">
+      <motion.header
+        className="fixed top-0 z-10 w-full px-4 py-4 "
+        initial="hidden"
+        animate="visible"
+        variants={menuVariants}
+      >
         <nav className="container flex items-center justify-between rounded-full border-2 text-white border-white/10 bg-white/5 p-2 backdrop-blur">
-          <div className="flex items-center">
+          <motion.div
+            className="flex items-center"
+            variants={logoVariants}
+            initial="hidden"
+            animate="visible"
+          >
             <Logo />
-          </div>
+          </motion.div>
           {/* for pc */}
-          <ul className="hidden space-x-4 md:flex">
+          <motion.ul
+            className="hidden space-x-4 md:flex"
+            variants={menuVariants}
+            initial="hidden"
+            animate="visible"
+          >
             {menuItems.map((value) => (
-              <li key={value.href}>
-                <a href={value.href} className='nav-item'>{value.label}</a>
-              </li>
+              <motion.li key={value.href} variants={menuItemVariants}>
+                <a href={value.href} className="nav-item">
+                  {value.label}
+                </a>
+              </motion.li>
             ))}
-          </ul>
-          <div className="hidden md:block">
-            <Button variant='outline' className="" >Contact Me</Button>
-          </div>
+          </motion.ul>
+          <motion.div
+            className="hidden md:block"
+            variants={logoVariants}
+            initial="hidden"
+            animate="visible"
+          >
+            <Button variant="outline" className="">
+              Contact Me
+            </Button>
+          </motion.div>
           {/* menu icon */}
-          <button
+          <motion.button
             className="text-4xl  text-white md:hidden"
             onClick={() => setMenuOpen(!menuOpen)}
             aria-label="Toggle Menu"
             aria-expanded={menuOpen}
+            variants={logoVariants}
+            initial="hidden"
+            animate="visible"
           >
             {menuOpen ? <BiX /> : <BiMenuAltRight />}
-          </button>
+          </motion.button>
         </nav>
-      </header>
+      </motion.header>
 
       {/* overlay for mobile menu */}
       {menuOpen && (
@@ -58,4 +126,3 @@ const Header = ({ menuOpen, setMenuOpen }) => {
 };
 
 export default Header;
-

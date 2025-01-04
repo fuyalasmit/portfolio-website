@@ -8,10 +8,11 @@ import {
   BiLogoTailwindCss,
 } from 'react-icons/bi';
 import { SiExpress } from 'react-icons/si';
+import { motion } from 'framer-motion';
 
-const HeroImage = () => {
+const HeroImage = ({variants}) => {
   return (
-    <div className="mask-gradient absolute right-0 top-0 h-[550px] w-full overflow-hidden rounded-bl-full rounded-br-full border-r-[10px] border-blue-500 bg-gray-700 md:h-[600px] md:w-[450px]">
+    <motion.div variants={variants} className="mask-gradient absolute right-0 top-0 h-[550px] w-full overflow-hidden rounded-bl-full rounded-br-full border-r-[10px] border-blue-500 bg-gray-700 md:h-[600px] md:w-[450px]">
       <AnimatedIcon Icon={BiLogoReact} className="left-10 top-24" />
       <AnimatedIcon Icon={BiLogoTailwindCss} className="right-10 top-28" />
       <AnimatedIcon Icon={BiLogoJavascript} className="left-2 top-72" />
@@ -21,7 +22,7 @@ const HeroImage = () => {
         src={userImage}
         alt="my image"
       />
-    </div>
+    </motion.div>
   );
 };
 

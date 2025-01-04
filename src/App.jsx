@@ -4,6 +4,7 @@ import Hero from './sections/Hero';
 import Projects from './sections/Projects';
 import Tape from './sections/Tape';
 import Contact from './sections/Contact';
+import Footer from './sections/Footer';
 
 const App = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -14,6 +15,7 @@ const App = () => {
       <Tape />
       <Projects />
       <Contact />
+      <Footer />
     </div>
   );
 };
