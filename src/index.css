@@ -4,14 +4,29 @@
 @tailwind components;
 @tailwind utilities;
 
-
-@layer base{
-    .nav-item{
-        @apply block rounded-full px-4 py-1.5 text-sm font-semibold text-white/70 transition duration-300 hover:bg-white/10 hover:text-white;
-    }
+@layer base {
+  .nav-item {
+    @apply block rounded-full px-4 py-1.5 text-sm font-semibold text-white/70 transition duration-300 hover:bg-white/10 hover:text-white;
+  }
+  .mask-gradient {
+    mask-image: linear-gradient(
+      to bottom,
+      transparent,
+      rgba(0, 0, 0.9),
+      rgba(0, 0, 0.9),
+      transparent
+    );
+    -webkit-mask-image: linear-gradient(
+      to bottom,
+      transparent,
+      rgba(0, 0, 0.9),
+      rgba(0, 0, 0.9),
+      transparent
+    );
+  }
 }
-@layer utilities{
-    .container{
-        @apply lg:max-w-6xl;
-    }
+@layer utilities {
+  .container {
+    @apply lg:max-w-6xl;
+  }
 }
