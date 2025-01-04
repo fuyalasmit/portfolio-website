@@ -15,6 +15,7 @@ const Header = ({ menuOpen, setMenuOpen }) => {
           <div className="flex items-center">
             <Logo />
           </div>
+          {/* for pc */}
           <ul className="hidden space-x-4 md:flex">
             {menuItems.map((value) => (
               <li key={value.href}>
@@ -58,4 +59,3 @@ const Header = ({ menuOpen, setMenuOpen }) => {
 
 export default Header;
 
-// 9:00

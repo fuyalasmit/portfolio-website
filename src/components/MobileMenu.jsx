@@ -4,7 +4,7 @@ import Button from './Button';
 
 const MobileMenu = ({ menuOpen, setMenuOpen, menuItems }) => {
   return (
-    <div className={`fixed left-0 top-0 z-30 h-full w-3/4 transform border-r-2 border-white/15 bg-white/20 px-4 backdrop-blur-xl transition-transform duration-300 ${menuOpen ? "translate-x-0": "-translate-x-full"} `}>
+    <div className={`fixed left-0 top-0 z-30 h-full w-3/4 transform border-r-2 border-white/15 bg-white/20 px-4 backdrop-blur-xl transition-transform duration-300 md:hidden ${menuOpen ? "translate-x-0": "-translate-x-full"} `}>
       <div className='mt-5' >
         <Logo />
       </div>
