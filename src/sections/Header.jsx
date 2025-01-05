@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { menuItems } from '../constants/index.jsx';
 import Button from '../components/Button.jsx';
 import { BiMenuAltRight, BiX } from 'react-icons/bi';
@@ -48,7 +48,6 @@ const Header = ({ menuOpen, setMenuOpen }) => {
       },
     },
   };
-  const [active, setActive] = useState('');
   return (
     <>
       <motion.header
@@ -68,7 +67,6 @@ const Header = ({ menuOpen, setMenuOpen }) => {
               to="/"
               className="flex items-center gap-2"
               onClick={() => {
-                setActive('');
                 window.scrollTo(0, 0);
               }}
             >

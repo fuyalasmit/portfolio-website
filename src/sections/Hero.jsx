@@ -46,10 +46,11 @@ const Hero = ({ menuOpen, setMenuOpen }) => {
     },
   };
   return (
-    <motion.section className="overflow-hidden"
-    initial="hidden"
-    animate="visible"
-    variants={containerVariants}
+    <motion.section
+      className="overflow-hidden"
+      initial="hidden"
+      animate="visible"
+      variants={containerVariants}
     >
       <div
         className={`container transition-all duration-300 ${
@@ -57,7 +58,8 @@ const Hero = ({ menuOpen, setMenuOpen }) => {
         }`}
       >
         {/* <div className="relative flex h-screen flex-col-reverse items-center md:flex-row"> */}
-        <div className="relative flex h-screen flex-col-reverse items-center md:flex-row">
+        <div className="relative flex min-h-[800px] flex-col-reverse md:min-h-[680px] md:flex-row md:items-center"
+        >
           {/* hero content  */}
           <HeroContent variants={contentVariants} />
           {/* hero image  */}
