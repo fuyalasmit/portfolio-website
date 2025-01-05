@@ -35,11 +35,18 @@ export default {
             transform: 'translateX(-50%)',
           },
         },
+        'ping-large': {
+          '75%, 100%': {
+            transform: 'scale(2.5)',
+            opacity: '0',
+          },
+        },
       },
-      animation:{
-        "bounce-up": "bounce-up 3s ease-in-out infinite",
-        "move-left": "move-left 30s linear infinite",
-      }
+      animation: {
+        'bounce-up': 'bounce-up 3s ease-in-out infinite',
+        'move-left': 'move-left 30s linear infinite',
+        'ping-large': 'ping-large 1s ease-in-out infinite',
+      },
     },
   },
   plugins: [],

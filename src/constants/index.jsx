@@ -109,3 +109,22 @@ export const words = [
   "GitHub",
   "VS Code",
 ];
+
+export const footerLinks = [
+  {
+    title: 'GitHub',
+    href: '#',
+  },
+  {
+    title: 'Twitter',
+    href: '#',
+  },
+  {
+    title: 'LinkedIn',
+    href: '#',
+  },
+  {
+    title: 'Blogs',
+    href: '#',
+  },
+];
