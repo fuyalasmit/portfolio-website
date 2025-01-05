@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from './Button';
 
 const ProjectCard = ({ project, index }) => {
   // console.log({ top: `calc(100px + ${index * 30}px)` });
@@ -15,6 +16,7 @@ const ProjectCard = ({ project, index }) => {
         </h2>
         <hr className="border-t-2 border-white/10" />
         <p className="text-sm text-white/30">{project.description}</p>
+        <Button>Visit Site</Button>
       </div>
       {/* project image */}
       <div className="mt-5 flex items-center justify-center md:mt-0 md:flex-1">

@@ -15,6 +15,31 @@ export default {
           // Adds default inner padding (1rem for all screen sizes, 2rem for lg screens and above).
         },
       },
+      keyframes: {
+        'bounce-up': {
+          '0%': {
+            transform: 'translateY(0)',
+          },
+          '50%': {
+            transform: 'translateY(-10px)',
+          },
+          '100%': {
+            transform: 'translateY(0)',
+          },
+        },
+        'move-left': {
+          '0%': {
+            transform: 'translateX(0)',
+          },
+          '100%': {
+            transform: 'translateX(-50%)',
+          },
+        },
+      },
+      animation:{
+        "bounce-up": "bounce-up 3s ease-in-out infinite",
+        "move-left": "move-left 30s linear infinite",
+      }
     },
   },
   plugins: [],
