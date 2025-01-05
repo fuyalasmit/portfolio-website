@@ -1,5 +1,4 @@
-import projectImage from '../assets/project.png';
-import { BiCodeAlt, BiMobileAlt, BiPalette, BiSearchAlt } from 'react-icons/bi';
+import projectImage from '../assets/projectPhotos/project.png';
 
 export const menuItems = [
   { label: 'Home', href: '#' },
@@ -11,51 +10,30 @@ export const menuItems = [
 export const projects = [
   {
     id: 1,
-    title: 'Responsive Portfolio Website',
+    title: 'Learning Management System',
     image: projectImage,
     description:
-      'A sleek and fully responsive portfolio website to showcase skills, projects, and experience. Built using HTML, CSS, and JavaScript with modern design practices.',
+    'A comprehensive platform for managing online courses, student enrollments, and assessments. Built with React, Node.js, Express, and MongoDB.',
+    github: "https://github.com/fuyalasmit?tab=repositories",
+    website:"https://github.com/fuyalasmit?tab=repositories",
   },
   {
     id: 2,
-    title: 'E-Commerce Platform',
+    title: 'Text to Own Handwriting',
     image: projectImage,
     description:
-      'An e-commerce platform with features like product listings, cart functionality, and user authentication. Developed using React, Node.js, Express, and MongoDB.',
+    'An application that converts typed text into a user\'s own handwriting style. Utilizes machine learning algorithms and React for the frontend.',
+    github: "",
+    website:"",
   },
   {
     id: 3,
-    title: 'Dashboard Design',
+    title: 'Agro Insights',
     image: projectImage,
     description:
-      'A highly customizable and interactive admin dashboard built with Tailwind CSS, React, and Chart.js to visualize complex data effectively.',
-  },
-];
-
-export const services = [
-  {
-    title: 'Web Development',
-    description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.',
-    icon: BiCodeAlt,
-  },
-  {
-    title: 'Mobile App Development',
-    description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.',
-    icon: BiMobileAlt,
-  },
-  {
-    title: 'UI/UX Design',
-    description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.',
-    icon: BiPalette,
-  },
-  {
-    title: 'SEO',
-    description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.',
-    icon: BiSearchAlt,
+    'A data-driven platform providing insights and analytics for the agricultural sector. Built with React, D3.js, and Node.js.',
+    github: "",
+    website:"",
   },
 ];
 
@@ -63,36 +41,35 @@ export const contactDetails = [
   {
     id: 1,
     type: 'Email',
-    value: 'yourname@example.com',
-    link: 'mailto:yourname@example.com',
+    value: 'contact.asmit@gmail.com',
+    link: 'mailto:contact.asmit@gmail.com',
     icon: '📧',
   },
   {
     id: 2,
     type: 'Phone',
-    value: '+123 456 7890',
-    link: 'tel:+1234567890',
+    value: '+977-9841944949',
+    link: 'tel:+9779841944949',
     icon: '📞',
   },
   {
     id: 3,
     type: 'LinkedIn',
-    value: 'linkedin.com/in/yourprofile',
-    link: 'https://www.linkedin.com/in/yourprofile',
+    value: 'linkedin.com/in/fuyalasmit',
+    link: 'https://www.linkedin.com/in/fuyalasmit',
     icon: '🔗',
   },
   {
     id: 4,
     type: 'Location',
-    value: 'Your City, Your Country',
+    value: 'Kathmandu, Nepal',
     link: null,
-    icon: '📍',
+    icon: '📌',
   },
 ];
 
 export const words = [
   'React',
-  'Next.js',
   'Tailwind',
   'TypeScript',
   'JavaScript',
@@ -101,8 +78,7 @@ export const words = [
   'Node.js',
   'Express',
   'MongoDB',
-  'GraphQL',
-  'Apollo',
+  "Docker",
   'APIs',
   'Git',
   'GitHub',
@@ -112,80 +88,57 @@ export const words = [
 export const footerLinks = [
   {
     title: 'GitHub',
-    href: '#',
+    href: 'https://github.com/fuyalasmit',
   },
   {
     title: 'Twitter',
-    href: '#',
+    href: 'https://x.com/asmlogs',
   },
   {
     title: 'LinkedIn',
-    href: '#',
+    href: 'https://www.linkedin.com/in/fuyalasmit/',
   },
   {
     title: 'Blogs',
-    href: '#',
+    href: 'https://blog.asmitphuyal.com.np',
   },
 ];
 
-import {
-  meta,
-  starbucks,
-  tesla,
-  shopify,
-} from "../assets";
+// workLogos
+// import {} from '../assets';
 
 export const experiences = [
   {
     title: 'React.js Developer',
-    company_name: 'Starbucks',
-    icon: starbucks,
-    iconBg: '#383E56',
+    company_name: '',
+    // icon: icon name imported from assets,
+    // iconBg: '#383E56',
     date: 'March 2020 - April 2021',
     points: [
-      "Developed and maintained interactive web components for Starbucks' e-commerce platform.",
-      'Enhanced website performance, reducing page load times by 30%.',
-      'Collaborated with teams to ensure brand consistency across digital platforms.',
-      'Built reusable components, improving scalability of the codebase.',
-    ],
-  },
-  {
-    title: 'React Native Developer',
-    company_name: 'Tesla',
-    icon: tesla,
-    iconBg: '#E6DEDD',
-    date: 'Jan 2021 - Feb 2022',
-    points: [
-      "Led mobile app development for Tesla's user management system.",
-      'Integrated real-time data sync features, enabling seamless updates.',
-      'Worked closely with backend developers to streamline API integration.',
-      'Optimized mobile app UX, improving customer engagement by 20%.',
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, possimus!',
+      'Lorem ipsum dolor sit amet.',
     ],
   },
   {
     title: 'Web Developer',
-    company_name: 'Shopify',
-    icon: shopify,
+    company_name: '',
+    // icon: ,
     iconBg: '#383E56',
     date: 'Jan 2022 - Jan 2023',
     points: [
-      "Built scalable web solutions for Shopify's marketplace.",
-      'Improved site responsiveness, achieving a 95% Lighthouse score.',
-      'Integrated third-party services to enhance platform functionality.',
-      "Contributed to developing themes for Shopify's storefronts.",
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, possimus!',
+      'Lorem ipsum dolor sit amet.',
     ],
   },
   {
     title: 'Full Stack Developer',
-    company_name: 'Meta',
-    icon: meta,
+    company_name: '',
+    // icon: ,
     iconBg: '#E6DEDD',
     date: 'Jan 2023 - Present',
     points: [
-      "Architected scalable systems for Meta's internal tools.",
-      'Collaborated on implementing GraphQL for optimized data fetching.',
-      'Enhanced deployment processes, reducing downtime by 15%.',
-      "Designed new features for Meta's project management platform.",
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, possimus!',
+      'Lorem ipsum dolor sit amet.',
     ],
   },
 ];

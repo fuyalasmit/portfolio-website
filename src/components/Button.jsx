@@ -1,7 +1,7 @@
 import React from 'react';
 import { twMerge } from 'tailwind-merge';
 import { motion } from 'framer-motion';
-const Button = ({ children, variant = 'primary', className }) => {
+const Button = ({ children, variant = 'primary', className, onClick }) => {
   const buttonVariants = {
     hover: {
       scale: 1.04,
@@ -30,6 +30,7 @@ const Button = ({ children, variant = 'primary', className }) => {
       variants={buttonVariants}
       whileHover="hover"
       whileTap="tap"
+      onClick={onClick}
     >
       {children}
     </motion.button>

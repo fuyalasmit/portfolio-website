@@ -15,7 +15,7 @@ const App = () => {
       <Hero menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <Tape />
       <Projects />
-      <Experience />
+      {/* <Experience /> */}
       <Contact />
       <Footer />
     </div>

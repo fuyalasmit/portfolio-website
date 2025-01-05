@@ -1,6 +1,7 @@
 import React from 'react';
 import { VerticalTimelineElement } from 'react-vertical-timeline-component';
 
+
 const ExperienceCard = ({ experience, index }) => {
   return (
     <VerticalTimelineElement

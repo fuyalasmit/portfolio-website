@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import SectionTitle from '../components/SectionTitle';
 import contactImage from '../assets/contact.svg';
 import { contactDetails } from '../constants';
@@ -6,8 +6,9 @@ import ContactDetailsCard from '../components/ContactDetailsCard';
 import { motion, useInView } from 'framer-motion';
 
 const Contact = () => {
-  const sectionRef = useRef(null);
+  const sectionRef = useRef(null);  
   const isInView = useInView(sectionRef);
+  const [animationPlayed, setAnimationPlayed] = useState(false);
 
   const fadeInVariants = {
     hidden: {
@@ -18,7 +19,7 @@ const Contact = () => {
       y: 0,
       opacity: 1,
       transition: {
-        duration: 0.6,
+        duration: 0.7,
         ease: 'easeOut',
       },
     },
@@ -27,17 +28,20 @@ const Contact = () => {
     hidden: {},
     visible: {
       transition: {
-        staggerChildren: 0.5,
+        staggerChildren: 0.2,
       },
     },
   };
+  if (isInView && !animationPlayed) {
+    setAnimationPlayed(true);
+  }
   return (
     <motion.section
       className="px-4 py-16 lg:py-20"
       id="contact"
       ref={sectionRef}
       initial="hidden"
-      animate={isInView ? 'visible' : 'hidden'}
+      animate={animationPlayed ? 'visible' : 'hidden'}
       variants={staggerContainer}
     >
       <SectionTitle title="Contact Me" />
@@ -49,8 +53,8 @@ const Contact = () => {
           <div className="flex flex-col items-center">
             <img src={contactImage} alt="Contact Image" className="h-50" />
             <div className="text-white/60 bg-white/5 border border-gray-800 px-4 py-1.5 inline-flex items-center gap-4 rounded-lg">
-              <div className='bg-green-500 size-2.5 rounded-full relative '>
-                <div className='bg-green-500 inset-0 absolute rounded-full animate-ping-large'></div>
+              <div className="bg-green-500 size-2.5 rounded-full relative ">
+                <div className="bg-green-500 inset-0 absolute rounded-full animate-ping-large"></div>
               </div>
               <span className="text-sm font-medium ">
                 Available for new projects
