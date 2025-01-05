@@ -56,6 +56,7 @@ const Hero = ({ menuOpen, setMenuOpen }) => {
           menuOpen ? 'px-10 blur-sm' : ''
         }`}
       >
+        {/* <div className="relative flex h-screen flex-col-reverse items-center md:flex-row"> */}
         <div className="relative flex h-screen flex-col-reverse items-center md:flex-row">
           {/* hero content  */}
           <HeroContent variants={contentVariants} />

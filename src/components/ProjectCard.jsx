@@ -18,7 +18,7 @@ const ProjectCard = ({ project, index }) => {
         </h2>
         <hr className="border-t-2 border-white/10" />
         <p className="text-sm text-white/30">{project.description}</p>
-        <div className="flex flex-row gap-2">
+        <div className="flex flex-row gap-3 justify-evenly md:justify-start">
           {project.github && (
             <Button
               className="flex gap-1 items-center"

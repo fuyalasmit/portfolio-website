@@ -1,12 +1,11 @@
-import React from 'react';
-import { TiCodeOutline } from 'react-icons/ti';
-import { TiCode } from 'react-icons/ti';
+import React, { useState } from 'react';
 import { menuItems } from '../constants/index.jsx';
 import Button from '../components/Button.jsx';
 import { BiMenuAltRight, BiX } from 'react-icons/bi';
 import MobileMenu from '../components/MobileMenu.jsx';
 import Logo from '../components/Logo.jsx';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 const Header = ({ menuOpen, setMenuOpen }) => {
   const logoVariants = {
@@ -49,6 +48,7 @@ const Header = ({ menuOpen, setMenuOpen }) => {
       },
     },
   };
+  const [active, setActive] = useState('');
   return (
     <>
       <motion.header
@@ -64,7 +64,16 @@ const Header = ({ menuOpen, setMenuOpen }) => {
             initial="hidden"
             animate="visible"
           >
-            <Logo />
+            <Link
+              to="/"
+              className="flex items-center gap-2"
+              onClick={() => {
+                setActive('');
+                window.scrollTo(0, 0);
+              }}
+            >
+              <Logo />
+            </Link>
           </motion.div>
           {/* for pc */}
           <motion.ul
@@ -88,7 +97,7 @@ const Header = ({ menuOpen, setMenuOpen }) => {
             animate="visible"
           >
             <Button variant="outline" className="">
-              Contact Me
+              ...........
             </Button>
           </motion.div>
           {/* menu icon */}
