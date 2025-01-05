@@ -9,18 +9,6 @@ const Contact = () => {
   const sectionRef = useRef(null);
   const isInView = useInView(sectionRef);
 
-  // const containerVariants = {
-  //   hidden: {
-  //     opacity: 0,
-  //   },
-  //   visible: {
-  //     opacity: 1,
-  //     transition: {
-  //       duration: 1,
-  //       ease: 'easeOut',
-  //     },
-  //   },
-  // };
   const fadeInVariants = {
     hidden: {
       y: 20,
@@ -39,7 +27,7 @@ const Contact = () => {
     hidden: {},
     visible: {
       transition: {
-        staggerChildren: 0.3,
+        staggerChildren: 0.5,
       },
     },
   };
