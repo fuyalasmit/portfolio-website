@@ -17,7 +17,7 @@ export const projects = [
     description:
       'This project is a Learning Management System (LMS) that allows users to register, log in, and manage their profiles. Instructors can create, edit, and manage courses, while students can browse, enroll in, and view courses. The backend is built with Node.js, Express, and MongoDB, while the frontend uses React, Redux Toolkit, and Tailwind CSS.',
     github: 'https://github.com/fuyalasmit/Learning-Management-System',
-    website: 'https://www.youtube.com/watch?v=30TF73z2JrM',
+    website: '',
   },
   {
     id: 2,
@@ -35,7 +35,7 @@ export const projects = [
     description:
       'AgroInsight is a smart farming tool designed to revolutionize crop management. Built during the Kathmandu University Hackfest, this innovative solution analyzes fields for pests, diseases, nutrient deficiencies, and soil moisture levels. It processe user-uploaded videos and integrates real-time soil moisture sensors to provide actionable insights and AI-driven recommendations for improved farming practices.',
     github: 'https://github.com/fuyalasmit/AgroInsight',
-    website: '',
+    website: 'https://www.youtube.com/watch?v=30TF73z2JrM',
   },
 ];
 
