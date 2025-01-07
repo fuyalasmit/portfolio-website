@@ -97,7 +97,9 @@ const Header = ({ menuOpen, setMenuOpen }) => {
           >
             <Button
               className="flex gap-1 items-center px-4"
-              onClick={() => window.open("github.com", '_blank')}
+              onClick={() =>
+                window.open('https://github.com/fuyalasmit', '_blank')
+              }
               variant="outline"
             >
               GitHub

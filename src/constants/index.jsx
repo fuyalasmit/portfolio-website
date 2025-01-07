@@ -1,5 +1,6 @@
-import projectImage from '../assets/projectPhotos/project.png';
-
+import lms from '../assets/projectPhotos/lms.png';
+import texttoownhandwriting from '../assets/projectPhotos/texttoownhandwriting.png';
+import agroIn from '../assets/projectPhotos/agroIn.png';
 
 export const menuItems = [
   { label: 'Home', href: '#' },
@@ -12,29 +13,29 @@ export const projects = [
   {
     id: 1,
     title: 'Learning Management System',
-    image: projectImage,
+    image: lms,
     description:
-    'A comprehensive platform for managing online courses, student enrollments, and assessments. Built with React, Node.js, Express, and MongoDB.',
-    github: "https://github.com/fuyalasmit?tab=repositories",
-    website:"https://github.com/fuyalasmit?tab=repositories",
+      'This project is a Learning Management System (LMS) that allows users to register, log in, and manage their profiles. Instructors can create, edit, and manage courses, while students can browse, enroll in, and view courses. The backend is built with Node.js, Express, and MongoDB, while the frontend uses React, Redux Toolkit, and Tailwind CSS.',
+    github: 'https://github.com/fuyalasmit/Learning-Management-System',
+    website: 'https://www.youtube.com/watch?v=30TF73z2JrM',
   },
   {
     id: 2,
     title: 'Text to Own Handwriting',
-    image: projectImage,
+    image: texttoownhandwriting,
     description:
-    'An application that converts typed text into a user\'s own handwriting style. Utilizes machine learning algorithms and React for the frontend.',
-    github: "",
-    website:"",
+      'This is a free online tool that transforms digital text into realistic handwritten text. Users can customize fonts, colors, and paper styles, then generate and download their handwritten text as images or compile multiple pages into a PDF.',
+    github: 'https://github.com/fuyalasmit/text-to-own-handwriting',
+    website: 'https://texttoownhandwriting.netlify.app/',
   },
   {
     id: 3,
     title: 'Agro Insights',
-    image: projectImage,
+    image: agroIn,
     description:
-    'A data-driven platform providing insights and analytics for the agricultural sector. Built with React, D3.js, and Node.js.',
-    github: "",
-    website:"",
+      'AgroInsight is a smart farming tool designed to revolutionize crop management. Built during the Kathmandu University Hackfest, this innovative solution analyzes fields for pests, diseases, nutrient deficiencies, and soil moisture levels. It processe user-uploaded videos and integrates real-time soil moisture sensors to provide actionable insights and AI-driven recommendations for improved farming practices.',
+    github: 'https://github.com/fuyalasmit/AgroInsight',
+    website: '',
   },
 ];
 
@@ -79,7 +80,7 @@ export const words = [
   'Node.js',
   'Express',
   'MongoDB',
-  "Docker",
+  'Docker',
   'APIs',
   'Git',
   'GitHub',
