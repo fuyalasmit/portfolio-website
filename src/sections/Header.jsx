@@ -6,6 +6,7 @@ import MobileMenu from '../components/MobileMenu.jsx';
 import Logo from '../components/Logo.jsx';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
+import { FaGithub } from 'react-icons/fa';
 
 const Header = ({ menuOpen, setMenuOpen }) => {
   const logoVariants = {
@@ -94,8 +95,13 @@ const Header = ({ menuOpen, setMenuOpen }) => {
             initial="hidden"
             animate="visible"
           >
-            <Button variant="outline" className="">
-              ...........
+            <Button
+              className="flex gap-1 items-center px-4"
+              onClick={() => window.open("github.com", '_blank')}
+              variant="outline"
+            >
+              GitHub
+              <FaGithub />
             </Button>
           </motion.div>
           {/* menu icon */}

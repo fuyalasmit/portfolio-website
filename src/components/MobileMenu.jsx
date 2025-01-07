@@ -16,9 +16,7 @@ const MobileMenu = ({ menuOpen, setMenuOpen, menuItems }) => {
           </li>
         ))}
       </ul>
-      <Button variant='outline' className="mt-5 py-2">
-        Contact Me
-      </Button>
+      
     </div>
   );
 };
