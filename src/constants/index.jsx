@@ -5,7 +5,7 @@ import agroIn from '../assets/projectPhotos/agroIn.png';
 export const menuItems = [
   { label: 'Home', href: '#' },
   { label: 'Projects', href: '#projects' },
-  { label: 'Experiences', href: '#experience' },
+  // { label: 'Experiences', href: '#experience' },
   { label: 'Contact', href: '#contact' },
 ];
 
