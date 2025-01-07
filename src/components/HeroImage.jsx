@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import userImage from '../assets/user.png';
+import userImageBnw from '../assets/userBNW.png';
 import blurUserCompressed from '../assets/blurUserCompressed.png';
 import AnimatedIcon from './AnimatedIcon';
 import {
@@ -12,6 +13,7 @@ import { motion } from 'framer-motion';
 
 const HeroImage = ({ variants }) => {
   const [isLoading, setIsLoading] = useState(true);
+  const [isHovered, setIsHovered] = useState(false);
 
   return (
     <motion.div
@@ -29,11 +31,22 @@ const HeroImage = ({ variants }) => {
           alt="my image"
         />
       )}
+      {isHovered && (
+        <img
+          className="absolute bottom-0 left-1/2 w-[450px] -translate-x-1/2 transition duration-300 ease-in-out"
+          src={userImage}
+          alt="my image"
+        />
+      )}
       <img
         className="absolute bottom-0 left-1/2 w-[450px] -translate-x-1/2"
-        src={userImage}
+        src={userImageBnw}
         alt="my image"
         onLoad={() => setIsLoading(false)}
+        onTouchStart={() => setIsHovered(true)}
+        onTouchEnd={() => setIsHovered(false)}
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
       />
     </motion.div>
   );

@@ -1,5 +1,6 @@
 import projectImage from '../assets/projectPhotos/project.png';
 
+
 export const menuItems = [
   { label: 'Home', href: '#' },
   { label: 'Projects', href: '#projects' },
