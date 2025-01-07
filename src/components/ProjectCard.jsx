@@ -35,7 +35,7 @@ const ProjectCard = ({ project, index }) => {
               onClick={() => window.open(project.website, '_blank')}
               variant="outline"
             >
-              See Demo <GoArrowUpRight />
+              Demo <GoArrowUpRight />
             </Button>
           )}
         </div>
