@@ -1,8 +1,12 @@
 import React from 'react';
 import Button from './Button';
 import { motion } from 'framer-motion';
+import { IoMdContacts } from 'react-icons/io';
 
 const HeroContent = ({ variants }) => {
+  const scrollToContact = () => {
+    document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+  };
   return (
     <motion.div variants={variants} className="text-left md:max-w-72 lg:max-w-lg">
       <h2 className="font-semibold font-serif text-3xl md:text-5xl text-white/80">
@@ -13,8 +17,8 @@ const HeroContent = ({ variants }) => {
       lorem43
       </p>
       <div className="flex items-center gap-3 mt-5">
-        <Button>Contact Me</Button>
-        <Button variant="outline">My Resume</Button>
+        <Button className="flex gap-2 items-center" onClick={scrollToContact} >Get In Touch <IoMdContacts /> </Button>
+        {/* <Button variant="outline">My Resume</Button> */}
       </div>
     </motion.div>
   );

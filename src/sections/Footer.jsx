@@ -52,15 +52,14 @@ const Footer = () => {
     >
       <div className="container p-4 border-t border-white/15 py-6 text-sm flex flex-col items-center gap-6 relative z-10">
         <motion.p
-          className="text-white/40 font-serif text-sm relative -z-9"
+          className="text-white/40 font-serif text-sm relative -z-9 text-center"
           variants={fadeInVariants}
         >
-          &copy; {new Date().getFullYear()} Asmit Phuyal. All rights reserved.
-          Happy{' '}
-          <span className="text-blue-500 font-semibold">
+          Happy <span className="text-blue-500 font-semibold">
             {DaysOfWeek[new Date().getDay()]}
           </span>
-          !
+          !<br />
+          &copy; {new Date().getFullYear()} Asmit Phuyal. All rights reserved.
         </motion.p>
 
         <motion.div

@@ -43,8 +43,8 @@ export const contactDetails = [
   {
     id: 1,
     type: 'Email',
-    value: 'contact.asmit@gmail.com',
-    link: 'mailto:contact.asmit@gmail.com',
+    value: 'contact@asmitphuyal.com.np',
+    link: 'mailto:contact@asmitphuyal.com.np',
     icon: '📧',
   },
   {
