@@ -1,9 +1,12 @@
 import React from 'react'
-import { TiCode } from 'react-icons/ti';
+import icon from "../assets/icon.svg"
 
 const Logo = () => {
   return (
-    <TiCode className="cursor-pointer text-4xl font-extralight text-white" />
+    <div>
+      <img src={icon} alt="logo" className="cursor-pointer text-white w-8 ml-1" />
+    </div>
+
   )
 }
 
