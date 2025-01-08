@@ -23,16 +23,18 @@ const HeroImage = ({ variants }) => {
       <AnimatedIcon Icon={BiLogoJavascript} className="left-2 top-72" />
       <AnimatedIcon Icon={SiExpress} className="right-2 top-80" />
 
-      {isLoading && (
-        <img
-          className="absolute bottom-0 left-1/2 w-[450px] -translate-x-1/2"
-          src={blurUserCompressed}
-          alt="my image"
-        />
-      )}
-      
       <img
-        className="absolute bottom-0 left-1/2 w-[450px] -translate-x-1/2"
+        className={`absolute bottom-0 left-1/2 w-[450px] -translate-x-1/2 transition-opacity duration-300 ${
+          isLoading ? 'opacity-100' : 'opacity-0'
+        }`}
+        src={blurUserCompressed}
+        alt="my image"
+      />
+
+      <img
+        className={`absolute bottom-0 left-1/2 w-[450px] -translate-x-1/2 transition-opacity duration-300 ${
+          isLoading ? 'opacity-0' : 'opacity-100'
+        }`}
         src={userImage}
         alt="my image"
         onLoad={() => setIsLoading(false)}

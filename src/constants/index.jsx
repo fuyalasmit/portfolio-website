@@ -44,7 +44,8 @@ export const contactDetails = [
     id: 1,
     type: 'Email',
     value: 'contact@asmitphuyal.com.np',
-    link: 'mailto:contact@asmitphuyal.com.np',
+    link: 'https://mail.google.com/mail/?view=cm&fs=1&to=contact@asmitphuyal.com.np',
+    mobileLink: "mailto:contact@asmitphuyal.com.np",
     icon: '📧',
   },
   {

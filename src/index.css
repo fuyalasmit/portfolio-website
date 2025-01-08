@@ -44,7 +44,7 @@ html{
   }
 
   ::-webkit-scrollbar {
-    width: 12px;
+    width: 5px;
     height: 12px;
   }
 
@@ -53,9 +53,7 @@ html{
   }
 
   ::-webkit-scrollbar-thumb {
-    background: #3b82f6;
-    border-radius: 6px;
-    border: 1px solid #eee;
+    background: #374356;
     transition: background 0.3s ease;
   }
 
