@@ -95,7 +95,7 @@ export const footerLinks = [
   },
   {
     title: 'Twitter',
-    href: 'https://x.com/asmlogs',
+    href: 'https://x.com/fuyalasmit',
   },
   {
     title: 'LinkedIn',
@@ -107,7 +107,7 @@ export const footerLinks = [
   },
 ];
 
-// workLogos
+// workCompanyLogos
 // import {} from '../assets';
 
 export const experiences = [
