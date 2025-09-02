@@ -1,63 +1,31 @@
-@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Space+Grotesk:wght@300..700&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-html{
-  scroll-behavior: smooth;
+:root {
+  color-scheme: dark;
 }
 
 @layer base {
-  .nav-item {
-    @apply block rounded-full px-4 py-1.5 text-sm font-semibold text-white/70 transition duration-300 hover:bg-white/10 hover:text-white;
-  }
-  .mask-gradient {
-    mask-image: linear-gradient(
-      to bottom,
-      transparent,
-      rgba(0, 0, 0.9),
-      rgba(0, 0, 0.9),
-      transparent
-    );
-    -webkit-mask-image: linear-gradient(
-      to bottom,
-      transparent,
-      rgba(0, 0, 0.9),
-      rgba(0, 0, 0.9),
-      transparent
-    );
-  }
-  .mask-gradient-right{
-    mask-image: linear-gradient(
-      to right,
-      transparent,
-      rgba(0, 0, 0.9),
-      rgba(0, 0, 0.9),
-      transparent
-    );
-  }
-}
-@layer utilities {
-  .container {
-    @apply lg:max-w-6xl;
+  html {
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
   }
 
-  ::-webkit-scrollbar {
-    width: 5px;
-    height: 12px;
+  body {
+    @apply antialiased bg-gray-950 text-cyan-100;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+    width: 100%;
   }
 
-  ::-webkit-scrollbar-track {
-    background: #20242d;
-  }
-
-  ::-webkit-scrollbar-thumb {
-    background: #374356;
-    transition: background 0.3s ease;
-  }
-
-  ::-webkit-scrollbar-thumb:hover {
-    background: #555555;
+  /* Reduce motion if user prefers it */
+  @media (prefers-reduced-motion: reduce) {
+    * {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
   }
 }
