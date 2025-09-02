@@ -1,11 +1,15 @@
 import { Layout } from "./components/layout/Layout";
+import CustomCursor from "./components/ui/CustomCursor";
 import { HeroPage } from "./pages/HeroPage";
 
 function App() {
   return (
-    <Layout>
-      <HeroPage />
-    </Layout>
+    <>
+      <CustomCursor />
+      <Layout>
+        <HeroPage />
+      </Layout>
+    </>
   );
 }
 
